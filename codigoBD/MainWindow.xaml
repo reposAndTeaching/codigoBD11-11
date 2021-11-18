@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Label x:Name="labelNombre" Content="Nombre Cuenta: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxNombre" HorizontalAlignment="Left" Height="23" Margin="144,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelPass" Content="Contraseña: " HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top" Width="254" Click="buttonRegistrar_Click"/>
         
+        <PasswordBox x:Name="passwordBoxPass" HorizontalAlignment="Left" Margin="144,53,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Button x:Name="buttonDeCaja" Content="MostrarMensaje" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="254" Click="buttonDeCaja_Click"/>
+        <Label x:Name="labelMayor" Content="Mayor?: " HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxMayor" Content="" HorizontalAlignment="Left" Margin="144,99,0,0" VerticalAlignment="Top"/>
+        
+        <DataGrid x:Name="dataGridUsuarios" ItemsSource="{Binding}" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="394" Margin="335,14,0,0" VerticalAlignment="Top" Width="447">
+            
+        </DataGrid>
+        
+
+
     </Grid>
 </Window>
